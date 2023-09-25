@@ -1,5 +1,6 @@
-# isaac-marl-mobile-manipulation
-Multi-Agent Reinforcement Learning for Mobile Manipulation with NVIDIA Isaac Sim
+# Multi-Agent Reinforcement Learning for Mobile Manipulation with Isaac Sim
+
+Partially and Globally Observable Multi-Agent Reinforcement Learning for Mobile Manipulation with NVIDIA Isaac Sim
 
 ## Installation
 
@@ -74,3 +75,19 @@ For multi-agent
 PYTHON_PATH scripts/rlgames_onnx_normalized_marl.py task=MobileFrankaMARL test=True checkpoint=CHECKPOINT_PATH
 ```
 (change MobileFrankaMARL to MobileFrankaMARL_cv for partial MARL)
+
+
+## Citation
+
+If you use this dataset for any academic work, please cite the following publication:
+
+```
+@misc{wenshuai2023less,
+    title={Less Is More: Robust Robot Learning via Partially Observable Multi-Agent Reinforcement Learning}, 
+    author={Wenshuai Zhao and Eetu Rantala and Joni Pajarinen and Jorge Peña Queralta},
+    year={2023},
+    eprint={},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO}
+}
+```
