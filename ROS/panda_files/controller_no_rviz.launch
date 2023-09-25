@@ -1,0 +1,17 @@
+<launch>
+    <arg name="use_rviz" default="false" />
+    
+    <include file="$(find panda_moveit_config)/launch/franka_control.launch" pass_all_args="true">
+        <arg name="robot_ip" value="172.16.0.2"/>
+        <arg name="load_gripper" value="true"/>
+    </include>
+
+    <!-- Note: args is x y z yaw pitch roll -->
+    <node pkg="tf2_ros" 
+            type="tf2_static_transform_publisher" 
+            name="tcp_broadcaster" 
+            args="0.0 0.0 0.1035  -0.7853981633974483 0.0 3.141592653589793 panda_link8 tcp" 
+    />
+
+    <include file="$(find tf_setup)/launch/tf_launch.launch" />
+</launch>

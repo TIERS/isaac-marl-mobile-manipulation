@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Optitrack broadcaster -->
+  <node pkg="tf_setup" name="tf2_broadcaster" type="tf2_broadcaster.py" output="screen" />
+
+  <!-- Two static transforms publishers -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="husky_link" args="0.3700 0.0376 -1.0076 0 0 0 optitrack_link husky_link" />
+  
+  <node pkg="tf2_ros" type="static_transform_publisher" name="arm_base_link" args="0.7468 0.0376 -0.6821 0 0 0 optitrack_link world" />
+</launch>
