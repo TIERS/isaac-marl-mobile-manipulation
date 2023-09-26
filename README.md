@@ -2,6 +2,14 @@
 
 Partially and Globally Observable Multi-Agent Reinforcement Learning for Mobile Manipulation with NVIDIA Isaac Sim
 
+## Introduction
+
+In this repo, we explore multi-agent RL for distributing the control policies of a mobile manipuator. We study whether separating the base and manipulator control policies yields a different performance or robustness.
+
+<img src="doc/sarl_vs_marl.gif" alt="marl" width="60%"/>
+
+<img src="doc/task.png" alt="task" width="60%"/>
+
 ## Installation
 
 (Modified from https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs/tree/release/2022.2.0)
@@ -60,6 +68,8 @@ Note that
 * Good starting point for figuring out the minibatch size is usually (horizon_length * num_envs) / 2
 
 For more information, please check out the [documentation for OmniIsaacGymEnvs](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs/tree/release/2022.2.0).
+
+![isaac sim training](doc/isaac.png)
 
 ## Exporting the neural network
 
