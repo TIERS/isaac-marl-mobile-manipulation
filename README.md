@@ -4,7 +4,7 @@ Partially and Globally Observable Multi-Agent Reinforcement Learning for Mobile 
 
 ## Introduction
 
-In this repo, we explore multi-agent RL for distributing the control policies of a mobile manipuator. We study whether separating the base and manipulator control policies yields a different performance or robustness.
+In this repo, we explore multi-agent RL for distributing the control policies of a mobile manipulator. We study whether separating the base and manipulator control policies yields a different performance or robustness.
 
 <p align="center" style="margin-top: 2em; margin-bottom: 1em;">
   <img width="90%" src="doc/sarl_vs_marl.gif">
